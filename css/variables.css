@@ -1,0 +1,57 @@
+var {
+  /* Colors */
+--white: #fff;
+--black: #333;
+--yellow: #FFAA00;
+--light-yellow: #FFC042;
+--dark-blue: #06266F;
+--blue: #1A377B;
+--light-blue: #0C338B;
+--lighter-blue: #007BD4;
+--dark-gray: #999999;
+--gray: #AEAEAE;
+--light-gray: #EBEBEB;
+--green: #00D67C;
+
+/* Fonts */
+--font-source-sans-pro: 'Source Sans Pro', sans-serif;
+--fonts-montserrat: 'Montserrat', sans-serif;
+
+/* Body */
+--base-text-color: var(--dark-gray);
+--base-background-color: var(--white);
+--font-size-base: 14px;
+--line-height-base: 1.5714;
+--base-font-family: var(--font-source-sans-pro);
+
+
+/* Liks */
+--base-link-color: var(--lighter-blue);
+
+/* Buttons  */
+--btn-color: var(--white);
+--btn-background: var(--lighter-blue);
+--btn-padding: 0.5em 1em;
+--btn-font-size: 20px;
+
+
+/* Forms */
+--form-element-padding: var(--btn-padding);
+--form-element-border-color: #DADADA;
+--form-element-focus-border-color:  #DADADA;
+--placeholder-color: var(--dark-gray);
+
+/* Headers */
+--h1-font-size: 20px;
+--h2-font-size: 18px;
+--h3-font-size: 16px;
+--h4-font-size: 14px;
+--h5-font-size: 12px;
+--h6-font-size: 10px;
+
+--headings-font-family: var(--fonts-montserrat);
+--headings-color: var(--black);
+
+
+--animation-speed: 0.3s;
+}
