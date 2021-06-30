@@ -1,57 +1,54 @@
-var {
+:root {
   /* Colors */
 --white: #fff;
---black: #333;
---yellow: #FFAA00;
---light-yellow: #FFC042;
---dark-blue: #06266F;
---blue: #1A377B;
---light-blue: #0C338B;
---lighter-blue: #007BD4;
---dark-gray: #999999;
---gray: #AEAEAE;
---light-gray: #EBEBEB;
---green: #00D67C;
+--black: #000;
+--dark-blue: #295fa2;
+--blue: #4b80c2;
+--light-blue: #5b92d6;
+
 
 /* Fonts */
---font-source-sans-pro: 'Source Sans Pro', sans-serif;
---fonts-montserrat: 'Montserrat', sans-serif;
+--fonts-montserrat: 'Montserrat', 'Roboto', 'Arial', sans-serif;
 
 /* Body */
---base-text-color: var(--dark-gray);
+--base-text-color: var(--black);
 --base-background-color: var(--white);
---font-size-base: 14px;
---line-height-base: 1.5714;
---base-font-family: var(--font-source-sans-pro);
+--font-size-base: 16px;
+--line-height-base: normal;
+--base-font-weigth: 400;
+--base-font-family: var(--fonts-montserrat);
 
 
 /* Liks */
---base-link-color: var(--lighter-blue);
+--base-link-color: var(--blue);
 
 /* Buttons  */
---btn-color: var(--white);
---btn-background: var(--lighter-blue);
---btn-padding: 0.5em 1em;
---btn-font-size: 20px;
+--btn-color: var(--blue);
+--btn-background: var(--white);
+--btn-border-color: var(--blue);
+--btn-padding: 1em 0.5em;
+--btn-font-size: 18px;
+--btn-font-weigth: 700;
 
 
 /* Forms */
 --form-element-padding: var(--btn-padding);
---form-element-border-color: #DADADA;
---form-element-focus-border-color:  #DADADA;
---placeholder-color: var(--dark-gray);
+--form-element-border-color: var(--blue);
+--form-element-focus-border-color:  var(--lighter-blue);
+--placeholder-color: var(--black);
 
 /* Headers */
---h1-font-size: 20px;
---h2-font-size: 18px;
---h3-font-size: 16px;
---h4-font-size: 14px;
---h5-font-size: 12px;
---h6-font-size: 10px;
+--h1-font-size: 30px;
+--h2-font-size: 20px;
+--h3-font-size: 18px;
+--h4-font-size: 16px;
+--h5-font-size: 14px;
+--h6-font-size: 12px;
 
 --headings-font-family: var(--fonts-montserrat);
---headings-color: var(--black);
+--headings-color: var(--blue);
+--headings-font-weigth: 700;
 
 
---animation-speed: 0.3s;
+--animation-speed: all 0.3s;
 }
