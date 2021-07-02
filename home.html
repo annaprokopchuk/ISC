@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css"/>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -20,25 +21,75 @@
 					<div class="languages-holder">
 						<a href="#" class="ua-lang active">
 							<img src="images/ua.svg" alt="ua" class="lang-img">
-							<span class="lang-text">Укр</span>
+							<span class="lang-text underline">Укр</span>
 						</a>
 						<a href="#" class="eng-lang">
 							<img src="images/eng.svg" alt="eng" class="lang-img">
-							<span class="lang-text">Eng</span>
+							<span class="lang-text underline">Eng</span>
 						</a>
 					</div>
 					<ul class="contact-holder">
 						<li>м.Харків, пр.Науки, 60</li>
-						<li><a href="tel:+380573410449">+38 (057) 341 04 49</a></li>
-						<li><a href="tel:+380573410166">+38 (057) 341 01 66</a></li>
-						<li><a href="tel:+380573409343">+38 (057) 340 93 43</a></li>
-						<li><a href="mailto:imc@isc.kharkov.ua">imc@isc.kharkov.ua</a></li>
+						<li><a href="tel:+380573410449" class="underline">+38 (057) 341 04 49</a></li>
+						<li><a href="tel:+380573410166" class="underline">+38 (057) 341 01 66</a></li>
+						<li><a href="tel:+380573409343" class="underline">+38 (057) 340 93 43</a></li>
+						<li><a href="mailto:imc@isc.kharkov.ua" class="underline">imc@isc.kharkov.ua</a></li>
 					</ul>
+					<div class="social-holder">
+						<a href="#" class="social-link"><img src="images/fb-2.png" alt="fb" class="social-icon"></a>
+						<a href="#"><img src="images/youtube-2.png" alt="youtube" class="social-icon youtube-icon"></a>
+					</div>
 				</div>
+				<nav class="navbar">
+					<a href="#" class="dropdown"><span class="dropdown-icon"></span></a>
+					<ul uk-dropdown class="navigation">
+						<li class="navigation-item"><a href="#" class="navigation-link underline">ГОЛОВНА</a></li>
+						<li class="navigation-item"><a href="#" class="navigation-link underline">ПОДІЇ ТА НОВИНИ</a></li>
+						<li class="navigation-item"><a href="#" class="navigation-link underline">СТРУКТУРА</a></li>
+						<li class="navigation-item"><a href="#" class="navigation-link underline">НАУКА</a></li>
+						<li class="navigation-item"><a href="#" class="navigation-link underline">ДІЯЛЬНІСТЬ</a></li>
+						<li class="navigation-item"><a href="#" class="navigation-link underline">АСПІРАНТУРА</a></li>
+						<li class="navigation-item"><a href="#" class="navigation-link underline">ПУБЛІКАЦІЇ</a></li>
+						<li class="navigation-item"><a href="#" class="navigation-link underline">КОНТАКТИ</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
+		<main id="main">
+			<div class="container">
+				<section class="section section-hero underline">
+					<ul class="hero-list">
+						<li>ДОСЛIДЖЕННЯ</li>
+						<li>РОЗРОБКА</li>
+						<li>ВПРОВАДЖЕННЯ</li>
+					</ul>
+					<div class="hero-img">
+						<img src="images/bg-img-2.png" alt="img">
+					</div>
+					<span class="bg-img bg-img-1"><img src="images/bg-img-1.svg" alt="img"></span>
+					<span class="bg-img bg-img-2"><img src="images/bg-img-1.svg" alt="img"></span>
+					<span class="bg-img bg-img-3"><img src="images/bg-img-1.svg" alt="img"></span>
+				</section>
+				<section class="section section-about">
+					<span class="underline"></span>
+					<h2 class="section-title">Інститут монокристалів НАН України має більш ніж піввіковий досвід:</h2>
+					<ul>
+						<li>в <strong>матеріалознавстві кристалічних матеріалів</strong> для оптики, лазерної техніки, електроніки та інших застосувань;</li>
+						<li>в <strong>фундаментальних дослідженнях структури</strong>, фізичних і фізико-хімічних властивостей кристалічних матеріалів;</li>
+						<li>в <strong>розробках і удосконаленні технологій</strong> отримання кристалів і виробів із них.</li>
+					</ul>
+					<p>В Інстітуті розробляються технології отримання і практичного використання лазерних кристалів тугоплавких оксидів, 
+						сполук А2В6 и їх твердих розчинів, нелінійно-оптичних органічних кристалів, лазерної и оптичної оксидної кераміки 
+						і інших матеріалів у відповідності до профілю своєї діяльності.</p>
+				</section>
+			</div>
+		</main>
+		<span class="bg-img bg-wrapper bg-img-1"><img src="images/bg-img-1.svg" alt="img"></span>
 	</div>
 
+
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
