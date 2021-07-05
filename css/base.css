@@ -104,16 +104,19 @@ img {
 	font-weight: var(--btn-font-weigth);
 	font-size: var(--btn-font-size);
 	color: var(--btn-color);
-	margin: 0 0 5px;
+	margin: 0;
 	transition: var(--animation-speed);
 	display: inline-block;
 	text-transform: uppercase;
 	min-width: 170px;
+	text-align: center;
 }
 
-.btn:hover {
+.btn:hover, .btn:active,
+.btn:focus {
   background-color: var(--btn-border-color);
-  color: var(--btn-background);
+	color: var(--btn-background);
+	text-decoration: none;
 }
 
 ol, ul {
@@ -273,9 +276,22 @@ textarea {
 	height: 1px;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	background-color: var(--blue);
 	opacity: 0;
 	transition: var(--animation-speed);
+}
+
+.underline:hover,
+.underline:focus,
+.underline:active {
+	text-decoration: none;
+}
+
+.underline:hover:before,
+.underline:focus:before,
+.underline:active:before {
+	opacity: 1;
 }
 
 .bg-wrapper.bg-img {
@@ -320,13 +336,65 @@ textarea {
 	font-weight: 500;
 }
 
-.section-about .underline:before {
+.section-about .underline:before, .card-technology .underline:before {
 	height: calc(100% - 40px);
 	width: 3px;
 	left: 0;
 	opacity: 1;
 	bottom: 50%;
   transform: translate(50%, 50%);
+}
+
+.section-technology {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card-technology {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	padding: 20px 0 25px 15px;
+}
+
+.card-technology .card-img {
+	margin: 0 auto 15px;
+	max-width: 371px;
+}
+
+.card-technology .card-content {
+	margin-bottom: 15px;
+}
+
+/* modal */
+.technology-modal {
+	padding: 30px 15px;
+}
+
+.technology-modal .uk-modal-body {
+	padding: 10px;
+	text-align: center;
+}
+
+.technology-modal .modal-body {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.technology-modal .link-department {
+	font-weight: var(--headings-font-weigth);
+	font-size: 18px;
+	position: relative;
+
+}
+
+.technology-modal .link-department:hover {
+	text-decoration: none;
+}
+
+.noc-modal {
+
 }
 
 @media (min-width: 425px) {
@@ -359,6 +427,11 @@ textarea {
 	
 	h6, .h6 {
 		font-size: 14px;
+	}
+
+	.btn {
+		padding: 18px 20px;
+		width: fit-content;
 	}
 
 	.header-top {
@@ -436,6 +509,27 @@ textarea {
 
 	.section-about .underline:before {
 		height: calc(100% - 50px);
+	}
+
+	.card-technology {
+		width: 50%;
+		padding: 20px 15px;
+	}
+
+	.card-technology .card-title {
+		margin-bottom: 30px;
+	}
+	
+	.card-technology .card-img {
+		margin: 0 auto 30px;
+	}
+	
+	.card-technology .card-content{
+		margin-bottom: 30px;
+	}
+
+	.technology-modal .uk-modal-body {
+		padding: 20px;
 	}
 	
 }
@@ -543,6 +637,18 @@ textarea {
 		width: 42px;
 		top: 68%;
 		left: 25%;
+	}
+
+	.card-technology {
+		padding: 25px 30px;
+	}
+
+	.card-technology .card-content {
+		margin-bottom: 50px;
+	}
+
+	.technology-modal .uk-modal-body {
+		padding: 20px 30px;
 	}
 }
 
