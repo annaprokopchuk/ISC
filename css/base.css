@@ -375,11 +375,13 @@ textarea {
 .technology-modal .uk-modal-body {
 	padding: 10px;
 	text-align: center;
+	border-radius: 0 0 15px 15px;
+	background-color: var(--lite-drey);
 }
 
 .technology-modal .modal-body {
 	text-align: left;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .technology-modal .link-department {
@@ -393,8 +395,15 @@ textarea {
 	text-decoration: none;
 }
 
-.noc-modal {
+.card-modal {
+	padding: 15px;
+	background-color: var(--white);
+	margin: 0 0 15px;
+}
 
+.card-modal .card-img {
+	margin: 0 auto 10px;
+	max-width: 253px;
 }
 
 @media (min-width: 425px) {
@@ -529,8 +538,10 @@ textarea {
 	}
 
 	.technology-modal .uk-modal-body {
-		padding: 20px;
+		padding: 25px 30px;
+		border-radius: 0 0 30px 30px;
 	}
+	
 	
 }
 
@@ -650,10 +661,41 @@ textarea {
 	.technology-modal .uk-modal-body {
 		padding: 20px 30px;
 	}
+
+	.technology-modal .modal-body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.technology-modal .card-modal {
+		width: calc(50% - 10px);
+		margin: 0 10px 10px 0;
+	}
+
+	.technology-modal .uk-modal-dialog {
+		width: 80%;
+	}
 }
 
 @media (min-width: 1200px) {
 	.navigation {
 		font-size: var(--h3-font-size);
+	}
+
+	.technology-modal .modal-body {
+		overflow: hidden;
+	}
+
+	.technology-modal .uk-modal-dialog {
+		width: 1110px;
+	}
+
+	.technology-modal .card-modal {
+		display: flex;
+	}
+
+	.technology-modal .card-modal p {
+		width: 50%;
+		margin-left: 10px;
 	}
 }
