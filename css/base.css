@@ -399,6 +399,7 @@ textarea {
 	padding: 15px;
 	background-color: var(--white);
 	margin: 0 0 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
 }
 
 .card-modal .card-img {
@@ -652,6 +653,7 @@ textarea {
 
 	.card-technology {
 		padding: 25px 30px;
+		margin-bottom: 20px;
 	}
 
 	.card-technology .card-content {
@@ -682,9 +684,9 @@ textarea {
 		font-size: var(--h3-font-size);
 	}
 
-	.technology-modal .modal-body {
+	/* .technology-modal .modal-body {
 		overflow: hidden;
-	}
+	} */
 
 	.technology-modal .uk-modal-dialog {
 		width: 1110px;
@@ -694,7 +696,7 @@ textarea {
 		display: flex;
 	}
 
-	.technology-modal .card-modal p {
+	.technology-modal .card-modal .card-text {
 		width: 50%;
 		margin-left: 10px;
 	}
