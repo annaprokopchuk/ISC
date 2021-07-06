@@ -151,6 +151,10 @@ textarea {
 	padding: 20px 0;
 }
 
+.header-contact {
+	display: flex;
+	align-items: flex-start;
+}
 
 .logo-holder {
 	max-width: 446px;
@@ -240,8 +244,16 @@ textarea {
 	margin-bottom: 10px;
 }
 
+.social-holder .social-link:hover img  {
+	transform: scale(0.9);
+	transition: var(--animation-speed);
+}
+
 .dropdown {
 	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
 }
 
 .dropdown-icon {
@@ -282,6 +294,7 @@ textarea {
 	background-color: var(--white);
 	width: 100%;
 	font-weight: 500;
+	top: 0 !important;
 }
 
 .navigation-item {
@@ -577,6 +590,10 @@ textarea {
 		opacity: 1;
 	}
 
+	.dropdown {
+		bottom: 30px;
+	}
+
 	.section-hero {
 		display: flex;
 		align-items: center;
@@ -763,6 +780,7 @@ textarea {
 
 	.contact-holder {
 		display: block;
+		margin-right: 20px;
 	}
 
 	.navigation {
@@ -784,6 +802,10 @@ textarea {
 		width: auto;
 	}
 	
+	.languages-holder {
+		margin-right: 20px;
+	}
+
 	.languages-holder .eng-lang {
 		margin-right: 15px;
 	}
