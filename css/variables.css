@@ -15,7 +15,7 @@
 --base-text-color: var(--black);
 --base-background-color: var(--white);
 --font-size-base: 16px;
---line-height-base: normal;
+--line-height-base: 1.3;
 --base-font-weigth: 400;
 --base-font-family: var(--fonts-montserrat);
 
