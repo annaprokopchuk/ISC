@@ -17,7 +17,7 @@
 				<div class="header-top">
 					<a href="home.html" class="logo-holder">
 						<img src="images/logo.svg" alt="Інститут монокристалів НАН України" class="logo-img">
-					</a>
+          </a>
 					<div class="header-contact">
 						<div class="languages-holder">
 							<a href="#" class="ua-lang active">
@@ -42,28 +42,28 @@
 						</div>
 					</div>
 				</div>
-				<nav class="navbar underline" uk-navbar="mode: click">
-					<a href="#" class="dropdown"><span class="dropdown-icon"></span></a>
-					<ul uk-dropdown class="navigation uk-navbar-nav">
+				<nav class="navbar underline">
+					<a href="#navigation" class="dropdown" uk-toggle="target: #navigation; animation: uk-animation-fade"><span class="dropdown-icon"></span></a>
+					<ul class="navigation" id="navigation" hidden>
 						<li class="navigation-item"><a href="home.html" class="navigation-link">ГОЛОВНА</a></li>
 						<li class="navigation-item"><a href="#" class="navigation-link">ПОДІЇ ТА НОВИНИ</a></li>
-						<li class="navigation-item submenu-link uk-parent">
-							<a href="#" class="navigation-link">СТРУКТУРА</a>
-							<div class="uk-navbar-dropdown">
-								<ul class="submenu uk-nav uk-navbar-dropdown-nav">
+						<li class="navigation-item submenu-link">
+							<a href="#structure-submenu" class="navigation-link" uk-toggle="target: #structure-submenu; animation: uk-animation-fade">СТРУКТУРА</a>
+							<div id="structure-submenu" class="structure-submenu" hidden>
+								<ul class="submenu">
 									<li class="navigation-item"><a href="#" class="navigation-link">Керівництво</a></li>
-									<li class="navigation-item uk-parent">
-										<a href="#" class="navigation-link ">Наукові відділи</a>
-										<ul class="sub-submenu">
+									<li class="navigation-item ">
+										<a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
+										<ul class="sub-submenu " id="science-departments-submenu" hidden>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ кристалічних матеріалів склідних сполук</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
 										</ul>
 									</li>
-									<li class="navigation-item uk-parent">
-										<a href="#" class="navigation-link">Допоміжні відділи</a>
-										<ul class="sub-submenu">
+									<li class="navigation-item ">
+										<a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
+										<ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ кадрів</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>

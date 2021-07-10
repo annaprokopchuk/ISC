@@ -82,6 +82,14 @@ ol>li, ul>li {
 	margin-bottom: 10px;
 }
 
+ul>li {
+	list-style: disc;
+}
+
+ul>li>ul>li {
+	list-style: circle;
+}
+
 ol>li::marker, ul>li::marker {
 	color: var(--blue);
 	font-weight: 500;
@@ -220,6 +228,7 @@ textarea {
 
 .contact-holder li {
 	margin-bottom: 0;
+	list-style: none;
 }
 
 .contact-holder a:hover,
@@ -313,6 +322,8 @@ textarea {
 	font-weight: 500;
 	top: 0 !important;
 	line-height: 1.2;
+	position: absolute;
+	box-shadow: 0 0 10px rgb(0 0 0 / 18%);
 }
 
 .navigation-item {
@@ -339,6 +350,12 @@ textarea {
 .sub-submenu .navigation-item {
 	text-transform: initial;
 }
+
+.submenu .navigation-link, 
+.sub-submenu .navigation-link {
+	padding: 10px !important;
+}
+
 .navbar .navigation .navigation-link {
 	min-height: auto;
 	font-size: var(--font-size-base);
@@ -349,7 +366,7 @@ textarea {
 	.navbar .uk-navbar-dropdown {
 		position: relative;
 		width: 100%;
-		padding: 0 0 0 25px;
+		padding: 0;
 		box-shadow: none;
 		margin-top: 0;
 	}
@@ -365,6 +382,9 @@ textarea {
 
 .navbar .sub-submenu {
 	padding-left: 20px;
+}
+.navbar .submenu {
+	padding: 0 10px;
 }
 
 .underline:before, .underline-left:before {
@@ -897,16 +917,33 @@ textarea {
 		background-color: transparent;
 		box-shadow: none;
 		position: relative;
-		padding: 10px 0 20px;
+		position: relative;
+		padding: 0;
+		box-shadow: none;
 	}
+
+	.navigation[hidden] {
+    display: flex!important;
+}
+
+.navigation .structure-submenu {
+	position: absolute;
+	background-color: var(--white);
+	padding: 15px 15px 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+}
 
 	.dropdown {
 		display: none;
 	}
 	
 	.navigation-item .navigation-link {
-		padding: 5px 8px;
+		padding: 10px 5px 20px;
 		width: auto;
+	}
+
+	.navigation-item {
+		margin: 0 -5px;
 	}
 	
 	.languages-holder {

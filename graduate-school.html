@@ -42,28 +42,28 @@
 						</div>
 					</div>
 				</div>
-				<nav class="navbar underline" uk-navbar="mode: click">
-					<a href="#" class="dropdown"><span class="dropdown-icon"></span></a>
-					<ul uk-dropdown class="navigation uk-navbar-nav">
+				<nav class="navbar underline">
+					<a href="#navigation" class="dropdown" uk-toggle="target: #navigation; animation: uk-animation-fade"><span class="dropdown-icon"></span></a>
+					<ul class="navigation" id="navigation" hidden>
 						<li class="navigation-item"><a href="home.html" class="navigation-link">ГОЛОВНА</a></li>
 						<li class="navigation-item"><a href="#" class="navigation-link">ПОДІЇ ТА НОВИНИ</a></li>
-						<li class="navigation-item submenu-link uk-parent">
-							<a href="#" class="navigation-link">СТРУКТУРА</a>
-							<div class="uk-navbar-dropdown">
-								<ul class="submenu uk-nav uk-navbar-dropdown-nav">
+						<li class="navigation-item submenu-link">
+							<a href="#structure-submenu" class="navigation-link" uk-toggle="target: #structure-submenu; animation: uk-animation-fade">СТРУКТУРА</a>
+							<div id="structure-submenu" class="structure-submenu" hidden>
+								<ul class="submenu">
 									<li class="navigation-item"><a href="#" class="navigation-link">Керівництво</a></li>
-									<li class="navigation-item uk-parent">
-										<a href="#" class="navigation-link ">Наукові відділи</a>
-										<ul class="sub-submenu">
+									<li class="navigation-item ">
+										<a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
+										<ul class="sub-submenu " id="science-departments-submenu" hidden>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ кристалічних матеріалів склідних сполук</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
 										</ul>
 									</li>
-									<li class="navigation-item uk-parent">
-										<a href="#" class="navigation-link">Допоміжні відділи</a>
-										<ul class="sub-submenu">
+									<li class="navigation-item ">
+										<a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
+										<ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Відділ кадрів</a></li>
 											<li class="navigation-item"><a href="#" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>
@@ -92,9 +92,9 @@
             <p>Нормативний строк підготовки доктора філософії в аспірантурі становить чотири роки, а доктора наук у докторантурі – два роки.</p>
             <p>Підготовка в аспірантурі передбачає виконання особою відповідної освітньо-наукової програми та проведення власного наукового дослідження за спеціальністю «Матеріалознавство».</p>
             <p>Освітньо-наукова програма аспірантури розробляється провідними вченими Інституту монокристалів НАН України:</p>
-            <p>Гарант освітньої програми - завідувач відділу, старший дослідник, професор, доктор технічних наук <a href="pablick/otd7/cv/CV_Явецький_Відділ 7.pdf" target="_blank">Явецький Р.П.</a> зі стажем наукової роботи понад 20 років, є професіоналом з досвідом роботи в галузі матеріалознавства, зокрема, керамічних та наноструктурних матеріалів. </p>
             <h3>Викладачі:</h3>
             <ol>
+              <li>Гарант освітньої програми - завідувач відділу, старший дослідник, професор, доктор технічних наук <a href="pablick/otd7/cv/CV_Явецький_Відділ 7.pdf" target="_blank">Явецький Р.П.</a> зі стажем наукової роботи понад 20 років, є професіоналом з досвідом роботи в галузі матеріалознавства, зокрема, керамічних та наноструктурних матеріалів.</li>
               <li>Провідний науковий співробітник, професор, доктор технічних наук <a href="pablick/otd7/cv/CV_Литвинов_Відділ 7.pdf" target="_blank">Литвинов Л.А.</a> зі стажем наукової (47 років) та науково-педагогічної (10 років) роботи, є професіоналом з досвідом роботи в галузі матеріалознавства, зокрема, розробки технології вирощування монокристалів сапфіру функціонального та конструкційного призначення.</li>
               <li>Старший науковий співробітник, старший дослідник, доктор технічних наук <a href="pablick/25/cv/CV_doljenkova.pdf" target="_blank">Долженкова О.Ф.</a> зі стажем наукової роботи 34 роки, є професіоналом з досвідом роботи в галузі матеріалознавства, зокрема, дослідження структури та фізичних властивостей матеріалів.</li>
               <li>Старший науковий співробітник, кандидат технічних наук <a href="pablick/23/cv/CV_Вовк Олег_Відділ 23.pdf" target="_blank">Вовк О.О.</a> зі стажем наукової роботи 14 років є професіоналом з досвідом роботи в галузі матеріалознавства, зокрема, розробки технологій виготовлення монокристалічних та керамічних матеріалів та їх обробки.</li>
@@ -158,21 +158,29 @@
                 <ul>
                   <li>Освітньо-наукова-програма <a href="#" target="_blank">(посилання на pdf)</a></li>
                   <li>Навчальний план <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Робочі програми дисциплін <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Філософія науки та культури <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Іноземна мова професійного спрямування для підготовки аспірантів до рівня загальноєвропейського стандарту володіння мовою С1 <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Менеджмент наукових проектів, підготовка наукових публікацій та презентацій <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Сучасні методи досліджень властивостей матеріалів <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Основи обробки матеріалів та одержання виробів з них <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Наукові основи технологій вирощування монокристалів <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Фізико-технологічні основи отримання керамічних матеріалів <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Наноматеріали та нанотехнології <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Розклад занять <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Індивідуальні плани аспірантів <a href="#" target="_blank">(посилання на pdf)</a></li>
-                  <li>Балабанов А.Е. <a href="pablick/otd7/cv/CV_Балабанов_Відділ 7.pdf" target="_blank">(посилання на pdf)</a></li>
-                  <li>Задорожній В.С. <a href="pablick/25/cv/CV_zadorojnyi.pdf" target="_blank">(посилання на pdf)</a></li>
-                  <li>Тимошенко А.Д. <a href="pablick/otd7/cv/CV_Тимошенко_Відділ 7.pdf" target="_blank">(посилання на pdf)</a></li>
-                  <li>Сірик Ю.В. <a href="pablick/23/cv/CV_Сірик_Відділ 23.pdf" target="_blank">(посилання на pdf)</a></li>
+                  <li>
+                    <p>Робочі програми дисциплін:</p>
+                    <ul>
+                      <li>Філософія науки та культури <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Іноземна мова професійного спрямування для підготовки аспірантів до рівня загальноєвропейського стандарту володіння мовою С1 <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Менеджмент наукових проектів, підготовка наукових публікацій та презентацій <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Сучасні методи досліджень властивостей матеріалів <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Основи обробки матеріалів та одержання виробів з них <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Наукові основи технологій вирощування монокристалів <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Фізико-технологічні основи отримання керамічних матеріалів <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Наноматеріали та нанотехнології <a href="#" target="_blank">(посилання на pdf)</a></li>
+                      <li>Розклад занять <a href="#" target="_blank">(посилання на pdf)</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Індивідуальні плани аспірантів:</p>
+                    <ul>
+                      <li>Балабанов А.Е. <a href="pablick/otd7/cv/CV_Балабанов_Відділ 7.pdf" target="_blank">(посилання на pdf)</a></li>
+                      <li>Задорожній В.С. <a href="pablick/25/cv/CV_zadorojnyi.pdf" target="_blank">(посилання на pdf)</a></li>
+                      <li>Тимошенко А.Д. <a href="pablick/otd7/cv/CV_Тимошенко_Відділ 7.pdf" target="_blank">(посилання на pdf)</a></li>
+                      <li>Сірик Ю.В. <a href="pablick/23/cv/CV_Сірик_Відділ 23.pdf" target="_blank">(посилання на pdf)</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li>
