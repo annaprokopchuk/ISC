@@ -926,7 +926,7 @@ textarea {
     display: flex!important;
 }
 
-.navigation .structure-submenu {
+.navigation .submenu {
 	position: absolute;
 	background-color: var(--white);
 	padding: 15px 15px 5px;
