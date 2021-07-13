@@ -158,15 +158,13 @@
 
 	.card-people .card-text {
 		width: calc(100% - 124px);
-    padding-left: 10px;
+		padding-left: 10px;
+		height: 100%;
 	}
 
 	.card-people .card-img {
 		align-self: flex-start;
-	}
-
-	.card-people .card-text-top {
-		margin-bottom: 10px;
+		margin-bottom: 0;
 	}
 
 	.card-people .peole-contact-holder {

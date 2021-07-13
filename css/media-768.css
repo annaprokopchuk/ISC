@@ -264,8 +264,23 @@
 		width: calc(50% - 10px);
 	}
 
-	.card-people .card-img {
-		margin-bottom: 0;
+	.card-people .peole-contact-holder {
+		font-size: var(--font-size-base);
+	}
+
+	.card-people .tel-list:before {
+		width: 28px;
+		height: 28px;
+	}
+
+	.card-people .tel-list, 
+	.card-people .mail-list {
+	padding-left: 42px;
+} 
+
+	.card-people .mail-list:before {
+		width: 29px;
+		height: 23px;
 	}
 
 }
