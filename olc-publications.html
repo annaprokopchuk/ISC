@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>ISC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <div class="container">
+          <div class="header-top">
+            <a href="home.html" class="logo-holder">
+              <img src="images/logo.svg" alt="Інститут монокристалів НАН України" class="logo-img">
+            </a>
+            <div class="header-contact">
+              <div class="languages-holder">
+                <a href="#" class="ua-lang active">
+                  <img src="images/ua.svg" alt="ua" class="lang-img">
+                  <span class="lang-text underline">Укр</span>
+                </a>
+                <a href="#" class="eng-lang">
+                  <img src="images/eng.svg" alt="eng" class="lang-img">
+                  <span class="lang-text underline">Eng</span>
+                </a>
+              </div>
+              <ul class="contact-holder">
+                <li>м.Харків, пр.Науки, 60</li>
+                <li><a href="tel:+380573410449" class="underline">+38 (057) 341 04 49</a></li>
+                <li><a href="tel:+380573410166" class="underline">+38 (057) 341 01 66</a></li>
+                <li><a href="tel:+380573409343" class="underline">+38 (057) 340 93 43</a></li>
+                <li><a href="mailto:imc@isc.kharkov.ua" class="underline">imc@isc.kharkov.ua</a></li>
+              </ul>
+              <div class="social-holder">
+                <a href="#" class="social-link"><img src="images/fb.svg" alt="fb" class="social-icon"></a>
+                <a href="#" class="social-link"><img src="images/youtube.svg" alt="youtube" class="social-icon youtube-icon"></a>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar underline">
+            <a href="#navigation" class="dropdown" uk-toggle="target: #navigation; animation: uk-animation-fade"><span class="dropdown-icon"></span></a>
+            <ul class="navigation" id="navigation" hidden>
+              <li class="navigation-item"><a href="home.html" class="navigation-link">ГОЛОВНА</a></li>
+              <li class="navigation-item"><a href="#" class="navigation-link">ПОДІЇ ТА НОВИНИ</a></li>
+              <li class="navigation-item submenu-link">
+                <a href="#structure-submenu" class="navigation-link" uk-toggle="target: #structure-submenu; animation: uk-animation-fade">СТРУКТУРА</a>
+                <div id="structure-submenu" class="structure-submenu" hidden>
+                  <ul class="submenu">
+                    <li class="navigation-item"><a href="#" class="navigation-link">Керівництво</a></li>
+                    <li class="navigation-item ">
+                      <a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
+                      <ul class="sub-submenu " id="science-departments-submenu" hidden>
+                        <li class="navigation-item"><a href="noc.html" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
+                        <li class="navigation-item"><a href="cmcc.html" class="navigation-link">Відділ кристалічних матеріалів склідних сполук</a></li>
+                        <li class="navigation-item"><a href="olc.html" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
+                        <li class="navigation-item"><a href="tcfs.html" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
+                      </ul>
+                    </li>
+                    <li class="navigation-item ">
+                      <a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
+                      <ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
+                        <li class="navigation-item"><a href="#" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
+                        <li class="navigation-item"><a href="#" class="navigation-link">Відділ кадрів</a></li>
+                        <li class="navigation-item"><a href="#" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>
+                        <li class="navigation-item"><a href="#" class="navigation-link">Паливо-виробничий відділ</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li class="navigation-item">
+                <a href="#activity-departments-submenu" class="navigation-link" uk-toggle="target: #activity-departments-submenu; animation: uk-animation-fade">ДІЯЛЬНІСТЬ</a>
+                <div id="activity-departments-submenu" hidden>
+                  <ul class="submenu">
+                    <li class="navigation-item"><a href="#" class="navigation-link">Наукові досягнення</a></li>
+                    <li class="navigation-item"><a href="#" class="navigation-link">Науково-технічні розробки</a></li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li class="navigation-item"><a href="graduate-school.html" class="navigation-link">АСПІРАНТУРА</a></li>
+              <li class="navigation-item"><a href="#" class="navigation-link">ПУБЛІКАЦІЇ</a></li>
+              <li class="navigation-item"><a href="#" class="navigation-link">КОНТАКТИ</a></li>
+            </ul>
+          </nav>
+          <span class="bg-img bg-page bg-img-1"><img src="images/bg-img-1.svg" alt="img"></span>
+        </div>
+      </header>
+      <main id="main">
+        <section class="section section-publications">
+          <div class="container">
+            <h4><a href="olc.html">ВІДДІЛ НЕЛІНІЙНО-ОПТИЧНИХ КРИСТАЛІВ</a></h4>
+            <h3 class="uk-text-center">Наукові публікації</h3>
+            <h4>Книги (2015-2021):</h4>
+            <ul class="publications-books-list">
+              <li>L.A. Lytvynov. Aluminium Oxide // Single Crystals of Electronic Materials, Growth  and Properties;1st Edition, 2018, Edited by Roberto Fornary, WOODHED publisher ELSEVIER, Chapter 15, p.447-483  <a href="https://www.elsevier.com/books/single-crystals-of-electronicmaterials/fornari/978-0-08-102096-8" target="blank">https://www.elsevier.com/books/single-crystals-of-electronicmaterials/fornari/978-0-08-102096-8</a></li>
+            </ul>
+            <h4>Статті (вибрані, за період 2018 – 2021):</h4>
+            <ul class="publications-articles-list">
+              <li>Chaika, M., Tomala, R., Vovk, O., Nizhankovskyi, S., Mancardi, G., Strek, W. Upconversion luminescence in Cr3+:YAG single crystal under infrared excitation // Journal of Luminescence. – 2020. - V.226. - 117467.  <a href=" https://doi.org/10.1016/j.jlumin.2020.117467" target="blank"> https://doi.org/10.1016/j.jlumin.2020.117467</a> Q2</li>
+              <li>M.P.Demesh, A.S.Yusukevich, N.V.Kuleshov, M.B.Kosmyna, A.N.Shekhovtsov, W.Paszkowicz. Compositional dependence of spectroscopic properties of Nd3+ ions in binary calcium orthovanadates // J. Luminescence. – 2020. – V.224. – 117270. <a href="https://doi.org/10.1016/j.jlumin.2020.117270" target="blank">https://doi.org/10.1016/j.jlumin.2020.117270</a> Q2</li>
+              <li>М.Б.Космина, О.М.Шеховцов. Напрями розвитку лазерного  матеріалознавства в Інституті монокристалів НАН України / В кн. «НТК «Інститут монокристалів». Сторінки історії 2005-2020». За ред. В.П. Семіноженка. – Харків: ІСМА. – 2020, 216 стор. С.22-32. ISBN 978-966-02-9248.С.22-32</li>
+              <li>Сідельнікова Н.С., Ніжанковський С.В., Баранов В.В. Спосіб вирощування монокристалів Ti:сапфіру методом горизонтальної спрямованої кристалізації  (ГСК) // Патент України на корисну модель #141111 (опубліковано 25.03.2020, бюл. №6/2020).</li>
+              <li>A.Sulich, J.Z. Domagala, J.Härtwig, A.N.Shekhovtsov, M.B.Kosmyna, L.V. Gudzenko, W.Paszkowicz. Nature and spatial distribution of extended defects in  Czochralski-grown Ca3RE2(BO3)4 (RE = Y, Gd) orthoborate single crystals // J.Physics D: Applied Physics. – 2019. – V.52. – 055102. – 13 p. (DOI:10.1088/1361-6463/aaec5a), <a href="https://doi.org/10.1088/1361-6463/aaec5a" target="blank">https://doi.org/10.1088/1361-6463/aaec5a</a> Q1.</li>
+              <li>D.V. Deyneko, D.A. Petrova, S.M. Aksenov, S.Yu. Stefanovich, O.V. Baryshnikova, S.S. Fedotov, P.C. Burns, M.B. Kosmyna, A.N. Shekhovtsov, B.I. Lazoryak Ferroelectricity, ionic conductivity and structural paths for large cations  migration in Ca10,5–xPbx(VO4)7 single crystals, x = 1.9, 3.5, 4.9 // CrystEngComm. – 2019. – V.21 – P.P.1309-1319. DOI: 10.1039/c8ce01843j Q1.</li>
+              <li>S. V. Nizhankovskyi ; E. A. Vovk ; A. N. Shekhovtsov ; S. I. Kryvonogov; N. O. Kovalenko; A. A. Kozlovskyi ; V. N. Baumer ; A. G. Doroshenko ; I. M. Pritula. Czochralski growth and characterization of Er3+,Yb3+:YCa4O(BO3)3 single  crystals // Proceedings 2019 IEEE 8th International Conference on Advanced  Optoelectronics and Lasers (CAOL). DOI: 10.1109/CAOL46282.2019.9019576 </li>
+              <li>S.V. Nizhankovskyi, N.S. Sidelnikova, V.V. Baranov. Influence of crystal growth  conditions and carbothermal treatment on activator charge state in Ti:sapphire //  Functional materials. - 2018. – V.25, №2. – P.208-217. <a href="https://doi.org/10.15407/fm25.02.208Q3" target="blank">https://doi.org/10.15407/fm25.02.208Q3</a> </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="logo-holder">
+              <img src="images/logo.svg" alt="Інститут монокристалів НАН України" class="logo-img">
+            </div>
+            <ul class="contact-holder">
+              <li class="underline-left"></li>
+              <li>м.Харків, пр.Науки, 60</li>
+              <li class="contact-item">
+                <a href="tel:+380573410449" class="underline">+38 (057) 341 04 49,</a> 
+                <a href="tel:+380573410166" class="underline">+38 (057) 341 01 66,</a> 
+                <a href="tel:+380573409343" class="underline">+38 (057) 340 93 43</a></li>
+              <li><a href="mailto:imc@isc.kharkov.ua" class="underline">imc@isc.kharkov.ua</a></li>
+            </ul>
+            <div class="social-holder">
+              <a href="#" class="social-link"><img src="images/fb.svg" alt="fb" class="social-icon"></a>
+              <a href="#" class="social-link"><img src="images/youtube.svg" alt="youtube" class="social-icon youtube-icon"></a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>	&#169 2021 <a href="home.html">Інститут монокристалів НАН України</a>. All Rights Reserved</p>
+          </div>
+        </div>
+        <span class="bg-img bg-page bg-img-2"><img src="images/bg-img-1.svg" alt="img"></span>
+      </footer>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
