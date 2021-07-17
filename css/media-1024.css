@@ -143,13 +143,12 @@
 		font-size: 20px;
 	}
 
-	.footer .bg-img.bg-img-2 {
+	/* .footer .bg-img.bg-img-2 img {
 		top: auto;
 		bottom: -800px;
 		transform: rotate(-166deg);
-		left: -100px;
 		width: 1550px;
-	}
+	} */
 
 	/* card-people */
 	.card-people {

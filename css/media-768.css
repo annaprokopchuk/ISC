@@ -283,4 +283,8 @@
 		height: 23px;
 	}
 
+	.uk-accordion-title {
+		font-size: 18px;
+	}
+
 }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>ISC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <div class="container">
+          <div class="header-top">
+            <a href="home.html" class="logo-holder">
+              <img src="images/logo.svg" alt="Інститут монокристалів НАН України" class="logo-img">
+            </a>
+            <div class="header-contact">
+              <div class="languages-holder">
+                <a href="#" class="ua-lang active">
+                  <img src="images/ua.svg" alt="ua" class="lang-img">
+                  <span class="lang-text underline">Укр</span>
+                </a>
+                <a href="#" class="eng-lang">
+                  <img src="images/eng.svg" alt="eng" class="lang-img">
+                  <span class="lang-text underline">Eng</span>
+                </a>
+              </div>
+              <ul class="contact-holder">
+                <li>м.Харків, пр.Науки, 60</li>
+                <li><a href="tel:+380573410449" class="underline">+38 (057) 341 04 49</a></li>
+                <li><a href="tel:+380573410166" class="underline">+38 (057) 341 01 66</a></li>
+                <li><a href="tel:+380573409343" class="underline">+38 (057) 340 93 43</a></li>
+                <li><a href="mailto:imc@isc.kharkov.ua" class="underline">imc@isc.kharkov.ua</a></li>
+              </ul>
+              <div class="social-holder">
+                <a href="#" class="social-link"><img src="images/fb.svg" alt="fb" class="social-icon"></a>
+                <a href="#" class="social-link"><img src="images/youtube.svg" alt="youtube" class="social-icon youtube-icon"></a>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar underline">
+            <a href="#navigation" class="dropdown" uk-toggle="target: #navigation; animation: uk-animation-fade"><span class="dropdown-icon"></span></a>
+            <ul class="navigation" id="navigation" hidden>
+              <li class="navigation-item"><a href="home.html" class="navigation-link">ГОЛОВНА</a></li>
+              <li class="navigation-item"><a href="events-news.html" class="navigation-link">ПОДІЇ ТА НОВИНИ</a></li>
+              <li class="navigation-item submenu-link">
+                <a href="#structure-submenu" class="navigation-link" uk-toggle="target: #structure-submenu; animation: uk-animation-fade">СТРУКТУРА</a>
+                <div id="structure-submenu" class="structure-submenu" hidden>
+                  <ul class="submenu">
+                    <li class="navigation-item"><a href="leadership.html" class="navigation-link">Керівництво</a></li>
+                    <li class="navigation-item ">
+                      <a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
+                      <ul class="sub-submenu " id="science-departments-submenu" hidden>
+                        <li class="navigation-item"><a href="tcfs.html" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
+                        <li class="navigation-item"><a href="cmcc.html" class="navigation-link">Відділ кристалічних матеріалів складних сполук</a></li>
+                        <li class="navigation-item"><a href="olc.html" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
+                        <li class="navigation-item"><a href="noc.html" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
+                      </ul>
+                    </li>
+                    <li class="navigation-item ">
+                      <a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
+                      <ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
+                        <li class="navigation-item"><a href="accounting-reporting-department.html" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
+                        <li class="navigation-item"><a href="human-resources-department.html" class="navigation-link">Відділ кадрів</a></li>
+                        <li class="navigation-item"><a href="economic-operational-department.html" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>
+                        <li class="navigation-item"><a href="planning-production-department.html" class="navigation-link">Планово-виробничий відділ</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li class="navigation-item">
+                <a href="#activity-departments-submenu" class="navigation-link" uk-toggle="target: #activity-departments-submenu; animation: uk-animation-fade">ДІЯЛЬНІСТЬ</a>
+                <div id="activity-departments-submenu" hidden>
+                  <ul class="submenu">
+                    <li class="navigation-item"><a href="scientific-achievements.html" class="navigation-link">Наукові досягнення</a></li>
+                    <li class="navigation-item"><a href="scientific-technical-developments.html" class="navigation-link">Науково-технічні розробки</a></li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li class="navigation-item"><a href="graduate-school.html" class="navigation-link">АСПІРАНТУРА</a></li>
+              <li class="navigation-item"><a href="publications.html" class="navigation-link">ПУБЛІКАЦІЇ</a></li>
+              <li class="navigation-item"><a href="contacts.html" class="navigation-link">КОНТАКТИ</a></li>
+            </ul>
+          </nav>
+          <span class="bg-img bg-page bg-img-1"><img src="images/bg-img-1.svg" alt="img"></span>
+        </div>
+      </header>
+      <main id="main">
+        <section class="section section-publications">
+          <div class="container">
+            <h4><a href="tcfs.html" class="text-transform-uppercase">Відділ теорії конденсованного стану речовин</a></h4>
+            <h3 class="uk-text-center">Наукові публікації</h3>
+            <h4>Книги (2015-2021):</h4>
+            <ul class="publications-books-list">
+              <li>В.П.Семиноженко, В.В.Яновский, Перед ликом Вселенной, НТК &quot;Институт  монокристаллов&quot; НАН Украины, Харьков, Юнисофт 2020, 223 с., ISBN 978-966-935-910-0.</li>
+              <li>Болотин Ю.Л., Тур А.В., Яновский В.В., Физика планковского масштаба в терминах предельных величин, Проблемы теоретической физики. Научные  труды. Выпуск 3,., Харьков, ХНУ имени В.Н.Каразина, 2019, 386с ISBN 978-  966-285-594-4.</li>
+              <li>A.V.Tur, V.V.Yanovsky, Coherent Vortex Structures in Fluids and Plasma, Springer Series in Synergetics, 2017, 306p, ISBN: 978-1-53618-730-4. DOI  <a href="https://doi.org/10.1007/978-3-319-52733-8" target="blank">https://doi.org/10.1007/978-3-319-52733-8</a></li>
+              <li>В.В.Яновский, А.В.Тур, Частицы с внутренними степенями свободы, Проблемы теоретической физики, Научные труды, вып.2, Харьков, ХНУ имени В.Н.Каразина, 2017, 376 с., ISBN 978-966-285-377-5.</li>
+              <li>Yu.L.Bolotin, A.V.Tur, V.V.Yanovsky, Chaos: Concepts, Control and Constructive Use, Series: Understanding Complex Systems, Shpringer, 2016, 281p., ISBN:978-3-319-42496-5, DOI <a href="https://doi.org/10.1007/978-3-642-00937-2" target="blank">https://doi.org/10.1007/978-3-642-00937-2</a>.</li>
+            </ul>
+            <h4>Статті (вибрані, за період 2018 – 2021):</h4>
+            <ul class="publications-articles-list">
+              <li>D. M. Naplekov, V. V. Yanovsky, Internal chaotic sea structure and chaos-chaos intermittency in Hamiltonian systems, Phys. Rev. E, 103, 022209, 2021,  DOI: <a href="https://doi.org/10.1103/PhysRevE.103.022209" target="blank">https://doi.org/10.1103/PhysRevE.103.022209</a>,</li>
+              <li>Yu. Kravchenko, D. V. Fil, Control of charge state of dopants in insulating crystals: Case study of Ti-doped sapphire, Phys. Rev. Research, 2020 v.2,No 2, 023135, DOI: <a href="https://doi.org/10.1103/PhysRevResearch.2.023135" target="blank"> https://doi.org/10.1103/PhysRevResearch.2.023135</a></li>
+              <li>N.A.Safronova, O.S.Kryzhanovska, M.V.Dobrotvorska, A.E.Balabanov,  А.V.Tolmachev, R.P.Yavetskiy, S.V.Parkhomenko, R.Ye.Brodskii, V.N.Baumer, D.Yu.Kosyanov, O.O.Shichalin, E.K.Papynov, Jiang Li, Influence of sintering  temperature on structural and optical properties of Y2O3–MgO composite SPS ceramics, Ceramics International, Volume 46, Issue 5, 1 April 2020, Pages 6537-6543 <a href="https://doi.org/10.1016/j.ceramint.2019.11.137" target="blank">https://doi.org/10.1016/j.ceramint.2019.11.137</a></li>
+              <li>K. V. Germash, D. V. Fil, Anderson-Bogoliubov and Carlson-Goldman modes in counterflow superconductors: Case study of a double, Phys. Rev. B, 2019, v. 99, 125412, DOI:<a href="https://doi.org/10.1103/PhysRevB.99.125412" target="blank">https://doi.org/10.1103/PhysRevB.99.125412</a></li>
+              <li>N. A. Kasian, O.V. Vashchenko, L.V. Budianska, R.Ye. Brodskii, L.N. Lisetski. Cooperative domains in lipid membranes: size determination by calorimetry, J. Therm. Anal. Calorim., Volume 136, Number 2, 795-801 (2019) doi:10.1007/s10973-018-7695-8</li>
+              <li>O.V. Vashchenko, N.A. Kasian, L.V. Budianska, R.Ye. Brodskii, I.I. Bespalova, L.N. Lisetski. Adsorption of ions on model phospolipid membranes, J. Mol. Liq., Volume 275, 173-177 (2019) <a href="https://doi.org/10.1016/j.molliq.2018.11.053" target="blank">https://doi.org/10.1016/j.molliq.2018.11.053</a></li>
+              <li>N. A. Kasian, O. V. Vashchenko, L. V. Budianska, R.Ye. Brodskii, L. M.Lisetski. Thermodynamics and kinetics of joint action of antiviral agent tilorone and DMSO on model lipid membranes, Вiochim. Biophys. Acta Biomembranes,  pp. 123-129 (2018) DOI:<a href="https://doi.org/10.1016/j.bbamem.2018.08.007" target="blank">https://doi.org/10.1016/j.bbamem.2018.08.007</a></li>
+              <li>D.M. Naplekov, V. V. Yanovsky, Thin structure of transit time distributions of open billiards, Phys. Rev. E, 2018 v. 97, 012213(8), DOI:  <a href="https://doi.org/10.1103/PhysRevE.97.012213" target="blank">https://doi.org/10.1103/PhysRevE.97.012213</a> </li>
+              <li>Kravchenko L. Yu., Fil D. V, Defect complexes in Ti-doped sapphire: A first principles study, Journal of Applied Physics, 2018 V. 123, No 2. - P. 023104 (1-12), DOI:<a href="https://doi.org/10.1063/1.5002532" target="blank">https://doi.org/10.1063/1.5002532</a></li>
+              <li>V.O.Kharchenko, D.O.Kharchenko, V.V.Yanovsky, Nano-sized adsorbate structures formation in anisotropic multilayer system, Nanoscale Research Letters, 12:337(8), 2017 <a href="https://doi.org/10.1186/s11671-017-2096-7" target="blank">https://doi.org/10.1186/s11671-017-2096-7</a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="logo-holder">
+              <img src="images/logo.svg" alt="Інститут монокристалів НАН України" class="logo-img">
+            </div>
+            <ul class="contact-holder">
+              <li class="underline-left"></li>
+              <li>м.Харків, пр.Науки, 60</li>
+              <li class="contact-item">
+                <a href="tel:+380573410449" class="underline">+38 (057) 341 04 49,</a> 
+                <a href="tel:+380573410166" class="underline">+38 (057) 341 01 66,</a> 
+                <a href="tel:+380573409343" class="underline">+38 (057) 340 93 43</a></li>
+              <li><a href="mailto:imc@isc.kharkov.ua" class="underline">imc@isc.kharkov.ua</a></li>
+            </ul>
+            <div class="social-holder">
+              <a href="#" class="social-link"><img src="images/fb.svg" alt="fb" class="social-icon"></a>
+              <a href="#" class="social-link"><img src="images/youtube.svg" alt="youtube" class="social-icon youtube-icon"></a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>	&#169 2021 <a href="home.html">Інститут монокристалів НАН України</a>. All Rights Reserved</p>
+          </div>
+        </div>
+        <span class="bg-img bg-page bg-img-2"><img src="images/bg-img-1.svg" alt="img"></span>
+      </footer>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

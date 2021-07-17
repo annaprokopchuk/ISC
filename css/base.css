@@ -423,13 +423,31 @@ textarea {
 	width: 100%;
 }
 
-.footer .bg-img.bg-img-2 {
+/* .bg-img-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background: url('../images/bg-img-1.svg') no-repeat;
+} */
+
+/* .footer .bg-img.bg-img-2 {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer .bg-img.bg-img-2 img {
+	position: absolute;
 	top: auto;
 	bottom: -400px;
 	transform: rotate(-166deg);
-	left: -100px;
 	width: 940px;
-}
+} */
 
 /* section-hero */
 .section {
@@ -778,7 +796,7 @@ textarea {
 .department-link-list {
 	padding-left: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
@@ -823,7 +841,31 @@ textarea {
 	background-image: url(../images/certificate.svg);
 }
 
+.scientific-achievements-list>li {
+	list-style: none;
+}
+
+.uk-accordion-title {
+	cursor: pointer;
+	transition: var(--animation-speed);
+	font-size: 16px;
+}
+
+.uk-accordion-title:hover {
+	color: var(--blue);
+}
+
 .section-publications,
-.section-research {
+.section-research, 
+.card-people .peole-contact-holder, 
+.section-scientific-achievements  {
 	word-break: break-word;
+}
+
+.section-scientific-achievements h4 {
+	text-transform: uppercase;
+}
+
+.text-transform-uppercase {
+	text-transform: uppercase;
 }
