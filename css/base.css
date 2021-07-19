@@ -726,7 +726,8 @@ textarea {
 	background-size: cover;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 .card-people .mail-list:before {
