@@ -169,5 +169,12 @@
 	.card-people .peole-contact-holder {
 		left: 134px;
 	}
-	
+
+	.width2x {
+		width: calc(50% - 10px);	
+	}
+
+	.card-article:only-of-type {
+		width: 50%;
+	}
 }
