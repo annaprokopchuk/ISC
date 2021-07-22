@@ -1,4 +1,9 @@
 @media (min-width: 768px) {
+	#wrapper {
+		background-size: 600px;
+  	background-position: left bottom -90px;
+	}
+
 	h1, .h1 {
 		font-size: 36px;
 	}
@@ -331,4 +336,19 @@
 		width: 33.3%;
 		padding: 0 5px;
 	}
+
+	.card-news {
+		display: flex;
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+
+	.card-news .card-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 70%;
+		padding-left: 10px;
+	}
+	
 }

@@ -6,6 +6,9 @@
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100vh;
+	background: url('../images/bg-img-1.svg') no-repeat;
+	background-size: 350px;
+  background-position: left bottom;
 }
 
 
@@ -25,6 +28,8 @@ body {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+
 
 .container {
 	max-width: 1200px;
@@ -588,7 +593,7 @@ textarea {
 
 .footer {
 	padding: 20px 0;
-	position: relative;
+	
 }
 
 .footer .footer-top {
@@ -984,4 +989,32 @@ textarea {
 
 .width2x img, .width3x img {
 	margin-bottom: 15px;
+}
+
+.list-events-news {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card-news .card-img {
+	max-width: 300px;
+	margin: 0 auto 10px;
+}
+
+.card-news  {
+	padding: 15px 10px;
+	box-shadow: 0 0 10px rgb(0 0 0 / 18%);
+	background-color: var(--white);
+}
+
+.card-news .card-text-top {
+	margin-bottom: 15px;
+}
+
+.card-news time {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
 }
