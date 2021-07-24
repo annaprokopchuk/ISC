@@ -228,6 +228,11 @@
 
 	.section-gallery .uk-slider-items li {
 		list-style: none;
+		margin: 0;
+	}
+
+	.section-gallery .uk-slider-items li img {
+		width: 100%;
 	}
 
 	.footer {
