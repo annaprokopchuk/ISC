@@ -48,41 +48,36 @@
               <li class="navigation-item"><a href="home.html" class="navigation-link">ГОЛОВНА</a></li>
               <li class="navigation-item"><a href="events-news.html" class="navigation-link">ПОДІЇ ТА НОВИНИ</a></li>
               <li class="navigation-item submenu-link">
-                <a href="#structure-submenu" class="navigation-link" uk-toggle="target: #structure-submenu; animation: uk-animation-fade">СТРУКТУРА</a>
-                <div id="structure-submenu" class="structure-submenu" hidden>
-                  <ul class="submenu">
-                    <li class="navigation-item"><a href="leadership.html" class="navigation-link">Керівництво</a></li>
-                    <li class="navigation-item ">
-                      <a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
-                      <ul class="sub-submenu " id="science-departments-submenu" hidden>
-                        <li class="navigation-item"><a href="tcfs.html" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
-                        <li class="navigation-item"><a href="cmcc.html" class="navigation-link">Відділ кристалічних матеріалів складних сполук</a></li>
-                        <li class="navigation-item"><a href="olc.html" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
-                        <li class="navigation-item"><a href="noc.html" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
-                      </ul>
-                    </li>
-                    <li class="navigation-item"><a href="cente-collective-use-scientific-instruments.html" class="navigation-link">Центр колективного користування науковими приладами</a></li>
-                    <li class="navigation-item ">
-                      <a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
-                      <ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
-                        <li class="navigation-item"><a href="accounting-reporting-department.html" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
-                        <li class="navigation-item"><a href="human-resources-department.html" class="navigation-link">Відділ кадрів</a></li>
-                        <li class="navigation-item"><a href="economic-operational-department.html" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>
-                        <li class="navigation-item"><a href="planning-production-department.html" class="navigation-link">Планово-виробничий відділ</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                
+                <a href="#structure-submenu" class="navigation-link" type="button">СТРУКТУРА</a>
+                <ul class="submenu uk-width-large" id="structure-submenu" uk-drop="mode: click">
+                  <li class="navigation-item"><a href="leadership.html" class="navigation-link">Керівництво</a></li>
+                  <li class="navigation-item ">
+                    <a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
+                    <ul class="sub-submenu " id="science-departments-submenu" hidden>
+                      <li class="navigation-item"><a href="tcfs.html" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
+                      <li class="navigation-item"><a href="cmcc.html" class="navigation-link">Відділ кристалічних матеріалів складних сполук</a></li>
+                      <li class="navigation-item"><a href="olc.html" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
+                      <li class="navigation-item"><a href="noc.html" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
+                    </ul>
+                  </li>
+                  <li class="navigation-item"><a href="cente-collective-use-scientific-instruments.html" class="navigation-link">Центр колективного користування науковими приладами</a></li>
+                  <li class="navigation-item ">
+                    <a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
+                    <ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
+                      <li class="navigation-item"><a href="accounting-reporting-department.html" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
+                      <li class="navigation-item"><a href="human-resources-department.html" class="navigation-link">Відділ кадрів</a></li>
+                      <li class="navigation-item"><a href="economic-operational-department.html" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>
+                      <li class="navigation-item"><a href="planning-production-department.html" class="navigation-link">Планово-виробничий відділ</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li class="navigation-item">
-                <a href="#activity-departments-submenu" class="navigation-link" uk-toggle="target: #activity-departments-submenu; animation: uk-animation-fade">ДІЯЛЬНІСТЬ</a>
-                <div id="activity-departments-submenu" hidden>
-                  <ul class="submenu">
-                    <li class="navigation-item"><a href="scientific-achievements.html" class="navigation-link">Наукові досягнення</a></li>
-                    <li class="navigation-item"><a href="scientific-technical-developments.html" class="navigation-link">Науково-технічні розробки</a></li>
-                  </ul>
-                </div>
+                <a href="#activity-departments-submenu" class="navigation-link" type="button">ДІЯЛЬНІСТЬ</a>
+                <ul class="submenu uk-width-large" id="activity-departments-submenu" uk-drop="mode: click">
+                  <li class="navigation-item"><a href="scientific-achievements.html" class="navigation-link">Наукові досягнення</a></li>
+                  <li class="navigation-item"><a href="scientific-technical-developments.html" class="navigation-link">Науково-технічні розробки</a></li>
+                </ul>
                 
               </li>
               <li class="navigation-item"><a href="graduate-school.html" class="navigation-link">АСПІРАНТУРА</a></li>

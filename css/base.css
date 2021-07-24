@@ -145,23 +145,6 @@ a:focus {
 	text-decoration: none;
 }
 
-/* .input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='search'],
-input[type='password'],
-textarea {
-	background-color: #f2eee9;
-	width: 100%;
-	font-size: 12px;
-	outline-color: var(--orange);
-}
-
-textarea {
-	height: 103px;
-	resize: none;
-} */
-
 
 /* header styles */
 .header-top {
@@ -344,6 +327,10 @@ textarea {
 	position: relative;
 }
 
+[class*=uk-drop-bottom] {
+	margin-top: 0;
+}
+
 .navigation-item .navigation-link:hover,
 .navigation-item .navigation-link:active,
 .navigation-item .navigation-link:focus {
@@ -367,6 +354,16 @@ textarea {
 	font-family: var(--base-font-family);
 } 
 
+.navbar .uk-button {
+	line-height: var(--line-height-base);
+	text-align: left;
+}
+
+.navbar .uk-drop {
+	position: relative;
+	width: 100%;
+}
+
 @media (max-width: 1023px) {
 	.navbar .uk-navbar-dropdown {
 		position: relative;
@@ -376,14 +373,6 @@ textarea {
 		margin-top: 0;
 	}
 }
-
-/* .navbar .uk-navbar-nav {
-	display: none;
-}
-
-.navigation.uk-open.uk-navbar-nav {
-	display: flex;
-} */
 
 .navbar .sub-submenu {
 	padding-left: 20px;
@@ -427,32 +416,6 @@ textarea {
 .bg-page img {
 	width: 100%;
 }
-
-/* .bg-img-2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: "";
-	background: url('../images/bg-img-1.svg') no-repeat;
-} */
-
-/* .footer .bg-img.bg-img-2 {
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-}
-
-.footer .bg-img.bg-img-2 img {
-	position: absolute;
-	top: auto;
-	bottom: -400px;
-	transform: rotate(-166deg);
-	width: 940px;
-} */
 
 /* section-hero */
 .section {
@@ -997,6 +960,31 @@ textarea {
 	justify-content: space-between;
 }
 
+.filter-holder .uk-subnav>* {
+	padding-left: 0;
+	margin: 0 5px 10px;
+	list-style: none;
+}
+
+.filter-holder .uk-subnav {
+	margin: 0 -5px 15px;
+}
+
+.filter-holder .uk-subnav>*>:first-child {
+	color: var(--blue);
+	font-weight: 500;
+	padding: 10px;
+}
+
+.filter-holder .uk-subnav-pill>*>a:focus, 
+.filter-holder .uk-subnav-pill>*>a:hover,
+.filter-holder .uk-subnav-pill>*>a:active,
+.filter-holder .uk-subnav-pill>.uk-active>a {
+	background-color: var(--blue);
+	color: var(--white);
+	transition: var(--animation-speed);
+}
+
 .card-news .card-img {
 	max-width: 300px;
 	margin: 0 auto 10px;
@@ -1006,6 +994,16 @@ textarea {
 	padding: 15px 10px;
 	box-shadow: 0 0 10px rgb(0 0 0 / 18%);
 	background-color: var(--white);
+	position: relative;
+}
+
+.card-news .card-category {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	background-color: var(--blue);
+	color: var(--white);
 }
 
 .card-news .card-text-top {

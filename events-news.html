@@ -48,41 +48,36 @@
 						<li class="navigation-item"><a href="home.html" class="navigation-link">ГОЛОВНА</a></li>
 						<li class="navigation-item"><a href="events-news.html" class="navigation-link">ПОДІЇ ТА НОВИНИ</a></li>
 						<li class="navigation-item submenu-link">
-							<a href="#structure-submenu" class="navigation-link" uk-toggle="target: #structure-submenu; animation: uk-animation-fade">СТРУКТУРА</a>
-							<div id="structure-submenu" class="structure-submenu" hidden>
-								<ul class="submenu">
-									<li class="navigation-item"><a href="leadership.html" class="navigation-link">Керівництво</a></li>
-									<li class="navigation-item ">
-										<a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
-										<ul class="sub-submenu " id="science-departments-submenu" hidden>
-											<li class="navigation-item"><a href="tcfs.html" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
-											<li class="navigation-item"><a href="cmcc.html" class="navigation-link">Відділ кристалічних матеріалів складних сполук</a></li>
-											<li class="navigation-item"><a href="olc.html" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
-											<li class="navigation-item"><a href="noc.html" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
-										</ul>
-									</li>
-									<li class="navigation-item"><a href="cente-collective-use-scientific-instruments.html" class="navigation-link">Центр колективного користування науковими приладами</a></li>
-									<li class="navigation-item ">
-										<a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
-										<ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
-											<li class="navigation-item"><a href="accounting-reporting-department.html" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
-											<li class="navigation-item"><a href="human-resources-department.html" class="navigation-link">Відділ кадрів</a></li>
-											<li class="navigation-item"><a href="economic-operational-department.html" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>
-											<li class="navigation-item"><a href="planning-production-department.html" class="navigation-link">Планово-виробничий відділ</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							
+							<a href="#structure-submenu" class="navigation-link" type="button">СТРУКТУРА</a>
+							<ul class="submenu uk-width-large" id="structure-submenu" uk-drop="mode: click">
+								<li class="navigation-item"><a href="leadership.html" class="navigation-link">Керівництво</a></li>
+								<li class="navigation-item ">
+									<a href="#science-departments-submenu" class="navigation-link" uk-toggle="target: #science-departments-submenu; animation: uk-animation-fade">Наукові відділи</a>
+									<ul class="sub-submenu " id="science-departments-submenu" hidden>
+										<li class="navigation-item"><a href="tcfs.html" class="navigation-link">Відділ теорії конденсованного стану речовин</a></li>
+										<li class="navigation-item"><a href="cmcc.html" class="navigation-link">Відділ кристалічних матеріалів складних сполук</a></li>
+										<li class="navigation-item"><a href="olc.html" class="navigation-link">Відділ оптичних та лазерних кристалів</a></li>
+										<li class="navigation-item"><a href="noc.html" class="navigation-link">Відділ нелінійно-оптичних кристалів</a></li>
+									</ul>
+								</li>
+								<li class="navigation-item"><a href="cente-collective-use-scientific-instruments.html" class="navigation-link">Центр колективного користування науковими приладами</a></li>
+								<li class="navigation-item ">
+									<a href="#auxiliary-departments-submenu" class="navigation-link" uk-toggle="target: #auxiliary-departments-submenu; animation: uk-animation-fade">Допоміжні відділи</a>
+									<ul class="sub-submenu" id="auxiliary-departments-submenu" hidden>
+										<li class="navigation-item"><a href="accounting-reporting-department.html" class="navigation-link">Відділ бухгалтерського обліку та звітності</a></li>
+										<li class="navigation-item"><a href="human-resources-department.html" class="navigation-link">Відділ кадрів</a></li>
+										<li class="navigation-item"><a href="economic-operational-department.html" class="navigation-link">Господарсько-експлуатаційний відділ</a></li>
+										<li class="navigation-item"><a href="planning-production-department.html" class="navigation-link">Планово-виробничий відділ</a></li>
+									</ul>
+								</li>
+							</ul>
 						</li>
             <li class="navigation-item">
-              <a href="#activity-departments-submenu" class="navigation-link" uk-toggle="target: #activity-departments-submenu; animation: uk-animation-fade">ДІЯЛЬНІСТЬ</a>
-              <div id="activity-departments-submenu" hidden>
-                <ul class="submenu">
-                  <li class="navigation-item"><a href="scientific-achievements.html" class="navigation-link">Наукові досягнення</a></li>
-                  <li class="navigation-item"><a href="scientific-technical-developments.html" class="navigation-link">Науково-технічні розробки</a></li>
-                </ul>
-              </div>
+              <a href="#activity-departments-submenu" class="navigation-link" type="button">ДІЯЛЬНІСТЬ</a>
+							<ul class="submenu uk-width-large" id="activity-departments-submenu" uk-drop="mode: click">
+								<li class="navigation-item"><a href="scientific-achievements.html" class="navigation-link">Наукові досягнення</a></li>
+								<li class="navigation-item"><a href="scientific-technical-developments.html" class="navigation-link">Науково-технічні розробки</a></li>
+							</ul>
               
             </li>
 						<li class="navigation-item"><a href="graduate-school.html" class="navigation-link">АСПІРАНТУРА</a></li>
@@ -96,61 +91,99 @@
 		<main id="main">
       <section class="section section-events-news">
         <div class="container">
-          <h3>ПОДІЇ ТА НОВИНИ</h3>
-          <div class="list-events-news">
-            <div class="card-news">
-              <div class="card-img">
-                <img src="images/НАНУ.png" alt="НАНУ">
-              </div>
-              <div class="card-text">
-                <div class="card-text-top">
-                  <time datetime="2021-07-13 19:00">13.07.2021</time>
-                  <h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 245 від 07.07.2021 Про внесення змін до Положення про програму постдокторальних досліджень у НАН України м.Київ</h4>
-                  <p>З метою удосконалення реалізації програми постдокторальних досліджень у Національної академії наук України Президія НАН України постановляє:</p>
-                </div>
-                <a href="#" class="btn">Детальніше</a>
-              </div>
-            </div>
-            <div class="card-news">
-              <div class="card-img">
-                <img src="images/НАНУ.png" alt="НАНУ">
-              </div>
-              <div class="card-text">
-                <div class="card-text-top">
-                  <time datetime="2021-07-13 19:00">13.07.2021</time>
-                  <h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 246 від 07.07.2021 Про оголошення конкурсного відбору для участі у програмі постдокторальних досліджень у НАН України м.Київ</h4>
-                  <p>Згідно з Положенням про програму постдокторальних досліджень у Національній академії наук України, затвердженим постановою Президії НАН України від 09.12.2020 № 275 (в редакції постанови Президії НАН України від 07.07.2021 № 245) (далі – Положення) Президія НАН України постановляє:</p>
-                </div>
-                <a href="#" class="btn">Детальніше</a>
-              </div>
-            </div>
-            <div class="card-news">
-              <div class="card-img">
-                <img src="images/НАНУ.png" alt="НАНУ">
-              </div>
-              <div class="card-text">
-                <div class="card-text-top">
-                  <time datetime="2021-07-13 19:00">13.07.2021</time>
-                  <h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 245 від 07.07.2021 Про внесення змін до Положення про програму постдокторальних досліджень у НАН України м.Київ</h4>
-                  <p>З метою удосконалення реалізації програми постдокторальних досліджень у Національної академії наук України Президія НАН України постановляє:</p>
-                </div>
-                <a href="#" class="btn">Детальніше</a>
-              </div>
-            </div>
-            <div class="card-news">
-              <div class="card-img">
-                <img src="images/НАНУ.png" alt="НАНУ">
-              </div>
-              <div class="card-text">
-                <div class="card-text-top">
-                  <time datetime="2021-07-13 19:00">13.07.2021</time>
-                  <h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 246 від 07.07.2021 Про оголошення конкурсного відбору для участі у програмі постдокторальних досліджень у НАН України м.Київ</h4>
-                  <p>Згідно з Положенням про програму постдокторальних досліджень у Національній академії наук України, затвердженим постановою Президії НАН України від 09.12.2020 № 275 (в редакції постанови Президії НАН України від 07.07.2021 № 245) (далі – Положення) Президія НАН України постановляє:</p>
-                </div>
-                <a href="#" class="btn">Детальніше</a>
-              </div>
-            </div>
-          </div>
+					<h3>ПОДІЇ ТА НОВИНИ</h3>
+					<div uk-filter="target: .js-filter" class="filter-holder">
+						<ul class="uk-subnav uk-subnav-pill">
+							<li class="uk-active" uk-filter-control><a href="#">Всі новини</a></li>
+							<li uk-filter-control=".card-news-nanu"><a href="#">Новини НАНУ</a></li>
+							<li uk-filter-control=".card-news-iscu"><a href="#">Новини ІМКУ</a></li>
+							<li uk-filter-control=".card-defense-dissertations"><a href="#">Захист дисертацій</a></li>
+							<li uk-filter-control=".card-competitions-grants"><a href="#">Конкурси і гранти</a></li>
+							<li uk-filter-control=".card-news-other"><a href="#">Різне</a></li>
+						</ul>
+						<div class="list-events-news js-filter">
+							<div class="card-news card-news-nanu">
+								<div class="card-img">
+									<img src="images/НАНУ.png" alt="НАНУ">
+									<div class="card-category">
+										<span>Новини НАНУ</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<div class="card-text-top">
+										<time datetime="2021-07-13 19:00">13.07.2021</time>
+										<h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 245 від 07.07.2021 Про внесення змін до Положення про програму постдокторальних досліджень у НАН України м.Київ</h4>
+										<p>З метою удосконалення реалізації програми постдокторальних досліджень у Національної академії наук України Президія НАН України постановляє:</p>
+									</div>
+									<a href="#" class="btn">Детальніше</a>
+								</div>
+							</div>
+							<div class="card-news card-news-iscu">
+								<div class="card-img">
+									<img src="images/iscu.jpg" alt="ІМКУ">
+									<div class="card-category">
+										<span>Новини ІМКУ</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<div class="card-text-top">
+										<time datetime="2021-07-13 19:00">13.07.2021</time>
+										<h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 246 від 07.07.2021 Про оголошення конкурсного відбору для участі у програмі постдокторальних досліджень у НАН України м.Київ</h4>
+										<p>Згідно з Положенням про програму постдокторальних досліджень у Національній академії наук України, затвердженим постановою Президії НАН України від 09.12.2020 № 275 (в редакції постанови Президії НАН України від 07.07.2021 № 245) (далі – Положення) Президія НАН України постановляє:</p>
+									</div>
+									<a href="#" class="btn">Детальніше</a>
+								</div>
+							</div>
+							<div class="card-news card-defense-dissertations">
+								<div class="card-img">
+									<img src="images/iscu.jpg" alt="ІМКУ">
+									<div class="card-category">
+										<span>Захист дисертацій</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<div class="card-text-top">
+										<time datetime="2021-07-13 19:00">13.07.2021</time>
+										<h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 245 від 07.07.2021 Про внесення змін до Положення про програму постдокторальних досліджень у НАН України м.Київ</h4>
+										<p>З метою удосконалення реалізації програми постдокторальних досліджень у Національної академії наук України Президія НАН України постановляє:</p>
+									</div>
+									<a href="#" class="btn">Детальніше</a>
+								</div>
+							</div>
+							<div class="card-news card-competitions-grants">
+								<div class="card-img">
+									<img src="images/НАНУ.png" alt="НАНУ">
+									<div class="card-category">
+										<span>Конкурси і гранти</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<div class="card-text-top">
+										<time datetime="2021-07-13 19:00">13.07.2021</time>
+										<h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 246 від 07.07.2021 Про оголошення конкурсного відбору для участі у програмі постдокторальних досліджень у НАН України м.Київ</h4>
+										<p>Згідно з Положенням про програму постдокторальних досліджень у Національній академії наук України, затвердженим постановою Президії НАН України від 09.12.2020 № 275 (в редакції постанови Президії НАН України від 07.07.2021 № 245) (далі – Положення) Президія НАН України постановляє:</p>
+									</div>
+									<a href="#" class="btn">Детальніше</a>
+								</div>
+							</div>
+							<div class="card-news card-news-other">
+								<div class="card-img">
+									<img src="images/iscu.jpg" alt="ІМКУ">
+									<div class="card-category">
+										<span>Різне</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<div class="card-text-top">
+										<time datetime="2021-07-13 19:00">13.07.2021</time>
+										<h4>ПОСТАНОВА ПРЕЗИДІЇ НАН УКРАЇНИ №. 246 від 07.07.2021 Про оголошення конкурсного відбору для участі у програмі постдокторальних досліджень у НАН України м.Київ</h4>
+										<p>Згідно з Положенням про програму постдокторальних досліджень у Національній академії наук України, затвердженим постановою Президії НАН України від 09.12.2020 № 275 (в редакції постанови Президії НАН України від 07.07.2021 № 245) (далі – Положення) Президія НАН України постановляє:</p>
+									</div>
+									<a href="#" class="btn">Детальніше</a>
+								</div>
+							</div>
+						</div>
+					</div>
         </div>
       </section>
 		</main>

@@ -49,6 +49,15 @@
 	.dropdown {
 		display: none;
 	}
+
+	.navbar .uk-button {
+		text-align: center;
+	}
+
+	.navbar .uk-drop {
+		position: absolute;
+		max-width: 500px;
+	}
 	
 	.navigation-item .navigation-link {
 		padding: 10px 5px 20px;
@@ -178,16 +187,4 @@
 		width: 50%;
 	}
 
-	.card-news {
-		flex-direction: column;
-		width: calc(50% - 10px);
-		justify-content: space-between;
-	}
-
-	.card-news .card-text {
-		width: 100%;
-		padding-left: 0;
-		justify-content: space-between;
-		height: calc(100% - 358px);
-	}
 }
