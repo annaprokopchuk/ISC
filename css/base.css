@@ -300,6 +300,8 @@ a:focus {
 	height: 2px;
 }
 
+
+
 .navigation {
 	flex-direction: column;
 	padding-left: 0;
@@ -313,6 +315,10 @@ a:focus {
 	line-height: 1.2;
 	position: absolute;
 	box-shadow: 0 0 10px rgb(0 0 0 / 18%);
+}
+
+.navigation .uk-active>a {
+	color: var(--blue);
 }
 
 .navigation-item {
@@ -1016,4 +1022,8 @@ a:focus {
 	font-size: 20px;
 	font-weight: 500;
 	margin-bottom: 10px;
+}
+
+.accordion-publications>li {
+	list-style: none;
 }
